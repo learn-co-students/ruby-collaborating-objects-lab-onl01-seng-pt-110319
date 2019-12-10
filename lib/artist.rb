@@ -21,4 +21,8 @@ class Artist
   def add_song(song)
     @songs << song
   end 
+  
+ # def print_songs 
+  #  self.songs.each {|song| song.name}
+#end
 end 
