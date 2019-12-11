@@ -13,9 +13,7 @@ class MP3Importer
   
   ## imports the files into the library by creating songs from a $FILENAME
   def import
-    self.files.each do |file|
-      
-    end 
+    self.files.each {|file| Song.new_by_filename(file)}
   end
 end
 
