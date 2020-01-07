@@ -3,10 +3,10 @@ class Song
   @@all = []
   def initialize(name)
     @name = name
-    @all << self
+    @@all << self
   end
   
-  def song.all
+  def self.all
     @@all
   end
   
@@ -19,6 +19,7 @@ class Song
   
   def artist_name=
     Artist.find_or_create_name(self.artist)
-    
+    Artist.add_song(self)
+  end
   
 end
